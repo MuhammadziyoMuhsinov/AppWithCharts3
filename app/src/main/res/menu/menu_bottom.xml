@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/diagram1"
+        android:icon="@drawable/ic_diagram1"
+        android:title="диаграмма"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/diagram2"
+        android:icon="@drawable/ic_diagram2"
+        android:title="Структура по секторам"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/test"
+        android:icon="@drawable/ic_test"
+        android:title="тест"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_settings"
+        android:title="настройки"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/ic_info1"
+        android:title="Информация"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSetting">
+
+    <LinearLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/background_bottom_navtab"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtmode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="темный режим"
+                    android:textColor="@color/my_color2" />
+
+                <Switch
+                    android:id="@+id/mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtvoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="звук"
+                    android:textColor="@color/my_color2" />
+
+                <Switch
+                    android:id="@+id/voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtnotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="уведомление"
+                    android:textColor="@color/my_color2" />
+
+                <Switch
+                    android:id="@+id/notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtlanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="язык"
+                    android:textColor="@color/my_color2" />
+
+                <Spinner
+                    android:id="@+id/language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:entries="@array/my_holat"
+                    tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/my_color1"
+                android:text="сохранить"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
